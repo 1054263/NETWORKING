@@ -1,0 +1,25 @@
+creating new instances
+selecting Ubuntu 16.04
+choose instance type
+  t2.micro
+  number of instances 3
+  add storage-
+  Volume type -Root
+  Memory size-8 GB
+ Tags-
+  Name-Name
+  Value-Networking 
+ Security group -
+  Choose new  Security group
+ Review again
+ Launch
+ Download Key pair
+ 
+ Open Puttygen
+ Generate key
+ Save private key
+ Open Peagent
+ Add .PPK file
+ Open Putty
+ Paste Public address.
+ Change Colours for client machines
