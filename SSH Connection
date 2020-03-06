@@ -1,1 +1,11 @@
+server
+sudo apt-get update
+ssh-keygeg
+cat .ssh/id_rsa.pub
+Copy public key
 
+Client side
+
+Sudo nano .ssh/authorized keys
+paste into authorized keys
+Ctrl + x and save it
