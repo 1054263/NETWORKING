@@ -26,3 +26,9 @@ hello sir crtl-x y save
 13)sudo nano /etc/hosts
 /exports - 172.0.0.0/255.0.0.0(rw,no_root_squash,no_subtree_check,crossmnt,fsid=0)
 14)sudo /etc/init.d/nfs-kernel-server start
+
+Client
+Sudo apt-get update
+sudo apt-get install nfs-common rpcbind -y
+sudo mkdir /share
+sudo mount 172.31.4.251:/exports /share
