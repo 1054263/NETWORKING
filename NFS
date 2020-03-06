@@ -1,1 +1,28 @@
+ Server                                                                                 
 
+1) sudo apt-get update                                                       
+2) sudo nano /etc/hosts
+3) copy client private ip adress and private dns and ip-ip adress
+4) sudo apt-get install nfs-kernel-server rpcbind nfs-common -y
+5)sudo nano /etc/default/rpcbind  enter
+ a) then options=" " enter
+  b) Ctrl X and Yes and enter
+6)sudo nano /etc/hosts/allow
+a)  portmap:172.31.0. ctrl-x save
+7) sudo nano /etc/default/nfs-common
+  NEED_IDMAPD=YES
+8) create a export directory 
+  sudo mkdir /exports
+  ls /
+9) cd /exports\
+   pwd (print working dirctory)
+10) 1) sudo touch sri.html 2) sudo nano sri1.html crl x y enter
+11) sudo touch ibiga.txt
+   
+hello sir crtl-x y save
+
+12) want to see in file(  cat ibiga.txt)
+
+13)sudo nano /etc/hosts
+/exports - 172.0.0.0/255.0.0.0(rw,no_root_squash,no_subtree_check,crossmnt,fsid=0)
+14)sudo /etc/init.d/nfs-kernel-server start
