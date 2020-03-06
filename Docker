@@ -1,1 +1,33 @@
+Docker Commands:
+login as ubuntu
+sudo apt-get update (updating the softwares in to our system)
+sudo docker --version(checking docker version)
+sudo apt-get install docker.io(Installing Docker)
+sudo docker images(checking for images)
+sudo docker ps -a(checking for containers)
+sudo docker usermode -aG (open new session)
+docker pull ubuntu
 
+First Container :
+
+docker run -itd --name network ubuntu /bin/bash (Creating a container)
+docker ps -a 
+docker exec -it network /bin/bash (Opening a Container)
+apt-get udpate 
+apt-get install apache2 -y (Installing Webserver)
+rm /var/www/html/index.html (Removing default html file)
+nano /var/www/html/index.html (Editing html file)
+service apache2 status (checking apache server status)
+service apache2 restart( restarting apache server)
+
+Second Container :
+
+docker run -itd --name  -p 8081:80 webserver1 ubuntu /bin/bash (Creating a container)
+docker ps -a 
+docker exec -it webserver1 /bin/bash (Opening a Container)
+apt-get udpate 
+apt-get install apache2 -y (Installing Webserver)
+rm /var/www/html/index.html (Removing default html file)
+nano /var/www/html/index.html (Editing html file)
+service apache2 status (checking apache server status)
+service apache2 restart( restarting apache server)
